@@ -1,7 +1,5 @@
 GIT = https://github.com/notqmail/notqmail
 SHA = $$(git -C notqmail.git rev-parse ${BRANCH})
-USER = qmailtest
-GROUP = qmailtest
 
 all:v notqmail.git
 	@ls test | sed 's/.sh$$//' |\

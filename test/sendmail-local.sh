@@ -1,6 +1,6 @@
 # test that qmail-start can boot
 
-user=qmailtest
+user=notqmail-test
 dom=example.org
 home=$PWD/home
 mail=$user@$dom
