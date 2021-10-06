@@ -19,7 +19,7 @@ test:v notqmail-${COMMIT}
 	make -C notqmail-${COMMIT} setup
 	cd notqmail-${COMMIT}/root &&\
 	 PATH="$$PWD/bin:$$PATH" sh -eux ../../test/${TEST}.sh;\
-	 echo exit $?
+	 echo exit $$?
 
 notqmail-${COMMIT}: notqmail.git
 	git -C notqmail.git fetch origin ${COMMIT}
